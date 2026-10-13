@@ -1,0 +1,38 @@
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# The public repository/distribution is participant-facing. Organizer-only
+# tournament infrastructure remains local and is not committed.
+/organizers/
+
+# Generated participant training and match artifacts.
+/participants/logs/
+/participants/models/
+# Exclude local team files
+participants/my_team/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs and generated artifacts
+participants/logs/
+**/checkpoints/
+**/replays/
+
+# Archives and cached data
+*.zip
+*.rar
+*.7z
+*.npy
+*.npz
+
+# Local secrets
+.env
+.env.*
+
+# Ignore generated pickle files only after confirming
+# they are not required model assets
